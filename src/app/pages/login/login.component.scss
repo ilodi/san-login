@@ -1,0 +1,66 @@
+@import "../../../assets/styles/main.scss";
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box{
+  background: white;
+  border-radius: 6px;
+  width: 500px;
+  overflow: hidden;
+  box-shadow: 0px 20px 13px rgba(0, 0, 0, 0.03);
+  box-sizing: border-box;
+  padding: 30px;
+  .info{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    img{
+      width: 75px;
+      height: 75px;
+      background: $gradient;
+      border-radius: 8px;
+      padding: 0.5rem;
+    }
+    h1{
+      font-family: 'Ubuntu-Medium';
+      font-size: 1.55rem;
+      margin-top: 1.1rem;
+    }
+    p{
+      font-family: 'Ubuntu-Regular';
+      padding: 5px 0px 20px;
+      color: $grey-placeholder;
+    }
+  }
+  form{
+    button{
+    width: 100%;
+    height: 44px;
+    background: $grey;
+    border-radius: 6px;
+    transition: cubic-bezier(.30, 1, .25, 1);
+    transition-duration: 1.25s;
+    pointer-events:none;
+    p{
+      font-family: 'Ubuntu-Medium';
+      font-size: 1rem;
+      padding: 14px 0;
+      color: #fff;
+    }
+    &.active{
+      background-color:$red-oficial;
+      cursor: pointer;
+      pointer-events: auto;
+      &:hover{
+        background-color:darken($red-oficial, 10);
+        transition: cubic-bezier(.30, 1, .25, 1);
+        transition-duration: 1.25s;
+       }
+      }
+    }
+  }
+}

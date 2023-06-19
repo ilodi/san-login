@@ -1,0 +1,32 @@
+<main>
+  <div class="box">
+    <div class="info">
+      <img
+      [src]="url"
+      alt='{{title}}'
+      />
+      <h1 class="remove_p_m">
+        {{title}}
+      </h1>
+      <p class="remove_p_m">
+        {{subtitle}}
+      </p>
+    </div>
+    <form>
+      <general-input-dropdown
+      [label]="label_name"
+     >
+     </general-input-dropdown>
+    <general-input
+      [label]="label_password">
+    </general-input>
+    <hr-line></hr-line>
+    <button
+      type="button"
+      [ngClass]="{'active' : active_button}"
+      (click)="loginAction()">
+      <p>{{label_button}}</p>
+    </button>
+    </form>
+  </div>
+</main>

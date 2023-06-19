@@ -1,0 +1,25 @@
+.input_wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  label{
+    font-family: 'Ubuntu-Regular';
+    font-size: 16px;
+    line-height: 18px;
+    padding-bottom: 10px;
+  }
+  input{
+    background: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid #d1d1d1;
+    height: 45px;
+    font-size: 18px;
+    padding-left:0.5rem;
+    font-family: 'Ubuntu-Light';
+    &::placeholder {
+      color: #B2B2B2;
+    }
+  }
+}
+

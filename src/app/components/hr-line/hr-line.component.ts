@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   `,
   styleUrls: ['./hr-line.component.scss']
 })
+
 export class HrLineComponent {
 
 }

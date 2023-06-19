@@ -3,19 +3,16 @@
     for="droplist">
     {{label}}:
   </label>
-  <input
-    list="domain"
-    id="droplist"
-    type="text"
-    placeholder="{{label | lowercase}}">
-    <datalist id="domain">
-      <option value="Chrome">
-      <option value="Firefox">
-      <option value="Internet Explorer">
-      <option value="Opera">
-      <option value="Safari">
-      <option value="Microsoft Edge">
-    </datalist>
-
+  <div class="inputFlex">
+    <select name="domain" >
+      <option value="" disabled selected>DOMAIN</option>
+      <option [value]="domain" *ngFor="let domain of domain_list">{{domain}}</option>
+    </select>
+    <input
+      list="domain"
+      id="username"
+      type="text"
+      placeholder="{{label | lowercase}}">
+  </div>
 </div>
-<!-- [formControl]="name"-->
+

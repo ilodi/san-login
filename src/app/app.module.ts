@@ -7,6 +7,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { InputComponent } from './components/input/input.component';
 import { HrLineComponent } from './components/hr-line/hr-line.component';
 import { InputDropdownComponent } from './components/input-dropdown/input-dropdown.component';
+import { InputPasswordComponent } from './components/input-password/input-password.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InputDropdownComponent } from './components/input-dropdown/input-dropdo
     LoginComponent,
     InputComponent,
     HrLineComponent,
-    InputDropdownComponent
+    InputDropdownComponent,
+    InputPasswordComponent
   ],
   imports: [
     BrowserModule,
